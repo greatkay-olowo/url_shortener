@@ -4,7 +4,7 @@ A url shortener that shortens url and records hits when redirecting.
 
 ## Installation
 
-Download the code from [greatkay-olowo github]().
+Download the code from [greatkay-olowo github](https://github.com/greatkay-olowo/url_shortener).
 then:
 ```
 pip install
