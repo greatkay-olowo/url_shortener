@@ -61,7 +61,6 @@ async def get_user_url(code: str):
     cursor = connection.cursor()
     data = cursor.execute(
         'SELECT * FROM urls WHERE code = ?', (code,)).fetchall()
-    # return str(data[0][1])
     if data:
         cursor.execute(
             "UPDATE urls SET hit = hit+1 WHERE code = ? ", (code,))
