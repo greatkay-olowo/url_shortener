@@ -51,7 +51,7 @@ async def new_record(user_url: str):
         connection.commit()
         return {'success': {'shortened_url': base_url + data[0][0]}}
     else:
-        return {'already_taken': [{'shortened_url': base_url + last_data[0][0]}, {'count': last_data[0][1]}]}
+        return {'already_taken': {'shortened_url': base_url + last_data[0][0], 'count': last_data[0][2]}}
 
 
 # redirect url
