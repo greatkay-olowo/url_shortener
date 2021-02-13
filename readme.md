@@ -1,4 +1,4 @@
-#Url Shortner
+# Url Shortner
 
 A url shortener that shortens url and records hits when redirecting.
 
@@ -12,7 +12,9 @@ pip install
 
 ## Usage
 
-### Shorten url
+### Shorten url,
+<small> url should include www </small>
+
 ```
 GET /new/{url}
 ```
